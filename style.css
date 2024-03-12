@@ -1,0 +1,407 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --white: #fff;
+    --tmp: hsl(210, 12%, 76%);
+
+    --Open-Sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+7. Avoid text overflows
+*/
+h2,
+h1,
+h3 {
+    overflow-wrap: break-word;
+    color: var(--Very-Dark-Cyan);
+    font-family: var(--poppins);
+}
+
+p {
+    font-family: var(--Open-Sans);
+    color: var(--Very-Dark-Cyan);
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--Very-Pale-Blue);
+    text-align: center;
+    /* background-color: var(--tmp); */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.header img {
+    width: 5.75rem;
+    margin: 1.5rem;
+}
+
+._header_button {
+    background-color: var(--white);
+    border: solid 1px var(--Pink);
+    color: var(--Pink);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 5rem;
+    margin: 1rem;
+    /* padding: 0.18rem 0.5rem 0.18rem 0.5rem; */
+    font-family: var(--poppins);
+    font-size: 0.725rem;
+
+}
+
+._top-1 img,
+._bottom-1 img,
+._top-2 img,
+._bottom-2 img,
+._footer-top img {
+    width: 100%;
+}
+
+._white_section,
+._white_section1,
+._white_section2 {
+    background-color: var(--white);
+    /* padding: 5rem 2.5rem 5rem 2.5rem; */
+}
+
+._white_section h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+._white_section ._text_ {
+    font-weight: 600;
+    font-size: 0.8rem;
+    max-width: 400px;
+    width: 75%;
+    padding-top: 20px;
+}
+
+._white_section button,
+._white_section2 button {
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    font-size: 0.725rem;
+    padding: 0.65rem 2.75rem;
+    box-shadow: 0 3 16px black;
+}
+
+._white_section button {
+    margin-top: 50px;
+}
+
+._white_section ._image {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+._white_section ._group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 6rem;
+    /* background-color: aqua; */
+}
+
+._white_section ._sub_group {
+    text-align: left;
+    width: 45%;
+    max-width: 190px;
+    /* background-color: aqua; */
+}
+
+._white_section ._sub_group img {
+    width: 1.5rem;
+    /* justify-content: left; */
+
+}
+
+._number1_sub_group {
+    font-family: var(--Open-Sans);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+._number2_sub_group {
+    font-family: var(--Open-Sans);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+._sub_group p {
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+._blue_section_text,
+._white_section1_text,
+._blue_section1_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    ._white_section ._group {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20%;
+        padding: 0 0 5rem 0;
+    }
+
+    ._blue_section_text,
+    ._white_section1_text,
+    ._blue_section1_text {
+        text-align: left;
+    }
+}
+
+._blue_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 2rem 3rem 2rem;
+}
+
+._blue_section ._image {
+    width: 80%;
+    margin: 0 auto;
+}
+
+._blue_section_text h2 {
+    font-size: 1.3rem;
+}
+
+._blue_section_text p {
+    font-weight: 600;
+    font-size: 0.825rem;
+}
+
+@media (min-width: 600px) {
+    ._blue_section {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 4rem 0 4rem;
+    }
+
+    ._blue_section ._image {
+        width: 100%;
+    }
+}
+
+._white_section1 article {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 9rem 2.3rem 7.5rem 2.3rem;
+}
+
+._white_section1_text h2 {
+    font-size: 1.2rem;
+}
+
+._white_section1_text p {
+    font-size: 0.79rem;
+}
+
+._white_section1 article img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    ._white_section1 article {
+        padding: 9rem 2.3rem 7.5rem 2.3rem;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+._blue_section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem 2rem 6rem 2rem;
+}
+
+._blue_section1 img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+._blue_section1_text h2 {
+    font-size: 1.2rem;
+}
+
+._blue_section1_text p {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+    ._blue_section1 {
+        flex-direction: row-reverse;
+        padding: 1rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+
+    ._blue_section1 img {
+        width: 100%;
+    }
+}
+
+/* ._white_section2 img {
+    margin-top: 6rem;
+} */
+
+._white_section2 h2 {
+    margin-top: 3rem;
+}
+
+._white_section2 button {
+    margin-top: 2rem;
+}
+
+._about_us {
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--white);
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    padding: 2rem 1.7rem 2rem 1.7rem;
+    gap: 7rem;
+}
+
+._about_us h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+._about_us ._box2 .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+._about_us ._text2 {
+    color: var(--white);
+    padding: 1rem 0 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+._about_us input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    margin: 1rem 0 1rem 0;
+}
+
+._about_us button {
+    width: 50%;
+    padding: 0.7rem;
+    align-self: flex-end;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--Pink);
+    color: var(--white);
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+}
+
+._about_us ._logo1 {
+    width: 11rem;
+}
+
+._about_us ._text3 {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+._flex_phone,
+._flex_mail,
+._flex_media {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.7rem 0 0.7rem 0;
+}
+
+._flex_phone,
+._flex_media {
+    padding-top: 2rem;
+}
