@@ -171,20 +171,16 @@ body {
     align-items: center;
     margin-top: 6rem;
     gap: 6rem;
-    /* background-color: aqua; */
 }
 
 ._white_section ._sub_group {
     text-align: left;
     width: 45%;
     max-width: 190px;
-    /* background-color: aqua; */
 }
 
 ._white_section ._sub_group img {
     width: 1.5rem;
-    /* justify-content: left; */
-
 }
 
 ._number1_sub_group {
@@ -317,15 +313,14 @@ body {
         align-items: center;
     }
 
-
     ._blue_section1 img {
         width: 100%;
     }
 }
 
-/* ._white_section2 img {
+._white_section2 img {
     margin-top: 6rem;
-} */
+}
 
 ._white_section2 h2 {
     margin-top: 3rem;
@@ -342,7 +337,7 @@ body {
     flex-direction: column-reverse;
     text-align: left;
     padding: 2rem 1.7rem 2rem 1.7rem;
-    gap: 7rem;
+    gap: 6rem;
 }
 
 ._about_us h2 {
@@ -351,23 +346,59 @@ body {
     font-size: 1rem;
 }
 
+._about_us p {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+._about_us ._logo1 {
+    width: 12.3rem;
+}
+
+._about_us ._box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+._box1_head,
+._box2_head {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+._box1_phone-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+._box1_phone,
+._box1_mail,
+._box1_media {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+._about_us ._box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 ._about_us ._box2 .flex {
     display: flex;
     flex-direction: column;
-}
-
-._about_us ._text2 {
-    color: var(--white);
-    padding: 1rem 0 1rem 0;
-    font-size: 0.9rem;
-    font-weight: 400;
+    gap: 1rem;
 }
 
 ._about_us input {
     width: 100%;
     padding: 0.7rem;
     border-radius: 0.4rem;
-    margin: 1rem 0 1rem 0;
 }
 
 ._about_us button {
@@ -382,26 +413,50 @@ body {
     font-weight: 700;
 }
 
-._about_us ._logo1 {
-    width: 11rem;
-}
 
-._about_us ._text3 {
-    color: var(--white);
-    font-size: 0.9rem;
-    font-weight: 400;
-}
+@media (min-width: 600px) {
+    ._about_us {
+        flex-direction: row;
+        gap: 10rem;
+        padding: 4rem 4rem 4rem 4rem;
+    }
 
-._flex_phone,
-._flex_mail,
-._flex_media {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-    padding: 0.7rem 0 0.7rem 0;
-}
+    ._about_us p {
+        font-size: 0.5rem;
+    }
 
-._flex_phone,
-._flex_media {
-    padding-top: 2rem;
+    ._about_us h2 {
+        font-size: 0.8rem;
+    }
+
+    ._about_us ._logo1 {
+        width: 8rem;
+    }
+
+    ._about_us ._box2_head {
+        width:75%;
+    }
+
+    ._about_us ._box2 .flex {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    ._about_us button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 10px;
+        font-size: 0.5rem;
+        border-radius: 2px;
+    }
+
+    ._about_us input {
+        border-radius: 2px;
+        width: 150px;
+        height: 10px
+    }
 }
